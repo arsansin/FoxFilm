@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear21"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal"
+			android:layout_weight="1" />
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/icon_fox"
+			android:scaleType="fitCenter" />
+		<ImageView
+			android:id="@+id/imageview2"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:src="@drawable/zakja"
+			android:scaleType="fitCenter"
+			android:translationX="5.0dp" />
+		<LinearLayout
+			android:id="@+id/linear10"
+			android:layout_width="200dp"
+			android:layout_height="2dp"
+			android:layout_marginTop="8dp"
+			android:background="#FFFFFF"
+			android:orientation="horizontal"
+			android:scaleY="0.7" />
+		<LinearLayout
+			android:id="@+id/linear25"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/massage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="کهکشان بی پایان فیلم در دست تو"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear23"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|bottom"
+			android:orientation="horizontal"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:text="لطفا صبر کنید ..."
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:paddingLeft="10dp"
+		android:paddingTop="20dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="20dp"
+		android:background="#263238"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_marginBottom="5dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview3"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/not_tiket_image"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview6"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="یه بلیط نیاز داری"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ok"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal"
+			android:layout_gravity="center_vertical"
+			android:stateListAnimator="@anim/alpha_animator">
+			<TextView
+				android:id="@+id/textview5"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="برای اینکه قفل هر فیلم یا سریالی رو برای همیشه بازش کنی\nفقط یه بلیط نیاز داری, گرفتن بلیط هم مثل آب خوردن آسون و هیچ هزینه ایی نمیخواد.\nهمین الان برو تو باجه بلیط و هر چقدر دلت میخواد بلیط بگیر"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/okk"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="8dp"
+			android:padding="8dp"
+			android:background="#00E676"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			android:layout_gravity="center_vertical"
+			android:stateListAnimator="@anim/alpha_animator">
+			<TextView
+				android:id="@+id/textview4"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=" رفتن به باجه بلیط"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear7"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal" />
+	</LinearLayout>
+</LinearLayout>

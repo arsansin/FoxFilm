@@ -1,0 +1,40 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:layout_marginLeft="3dp"
+		android:layout_marginRight="3dp"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:background="#1D2733"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal"
+		android:rotation="180"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:stateListAnimator="@anim/alpha_animator">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:focusable="false"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:src="@drawable/del"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/textview1"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:text="عروسک"
+			android:textSize="14sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>

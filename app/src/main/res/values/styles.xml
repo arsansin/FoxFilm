@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- تم اصلی اپ -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- تم برای پلیر ویدیو -->
+    <style name="VideoPlayerTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- تم برای حالت تمام صفحه -->
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

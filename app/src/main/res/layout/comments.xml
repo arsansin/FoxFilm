@@ -1,0 +1,82 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#000000"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="35dp"
+				android:background="#0F1620"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:text="نظرات"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="50dp"
+					android:layout_height="5dp"
+					android:layout_marginTop="5dp"
+					android:padding="8dp"
+					android:background="#9E9E9E"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginTop="8dp"
+					android:padding="8dp"
+					android:background="#263238"
+					android:orientation="horizontal" />
+				<LinearLayout
+					android:id="@+id/nul"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<TextView
+						android:id="@+id/textview2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="برای این فیلم کامنتی وجود ندارد"
+						android:textSize="16sp"
+						android:textColor="#9E9E9E" />
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					tools:listitem="@layout/costume_comment" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

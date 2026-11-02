@@ -1,0 +1,321 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="8dp"
+		android:paddingTop="28dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="8dp"
+		android:background="#0F1620"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="75dp"
+				android:layout_marginRight="8dp"
+				android:paddingLeft="8dp"
+				android:paddingTop="10dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="10dp"
+				android:background="#1D2733"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:stateListAnimator="@anim/alpha_animator">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/phone_call_24"
+					android:scaleType="fitCenter" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="تماس با ما"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="75dp"
+				android:layout_marginRight="8dp"
+				android:paddingLeft="8dp"
+				android:paddingTop="10dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="10dp"
+				android:background="#1D2733"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:stateListAnimator="@anim/alpha_animator">
+				<ImageView
+					android:id="@+id/imageview2"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/shield_check_24"
+					android:scaleType="fitCenter" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="قوانین و مقررات"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="75dp"
+				android:paddingLeft="8dp"
+				android:paddingTop="10dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="10dp"
+				android:background="#448AFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:stateListAnimator="@anim/alpha_animator">
+				<ImageView
+					android:id="@+id/imageview3"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/interrogation_24"
+					android:scaleType="fitCenter" />
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="سوالات متداول"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF"
+					android:singleLine="true" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/textview4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="8dp"
+			android:text="سوالات متداول"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/linear6"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginRight="8dp"
+			android:padding="8dp"
+			android:background="#9E9E9E"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/linear7"
+			android:layout_width="100dp"
+			android:layout_height="5dp"
+			android:layout_marginRight="8dp"
+			android:padding="8dp"
+			android:background="#448AFF"
+			android:orientation="horizontal"
+			android:translationY="-2.5dp"
+			android:layout_gravity="right|center_vertical" />
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/question"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_vertical"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview32"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="0.چگونه ویدیو دلخواه خود را دانلود کنم؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview33"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="برای دانلود ویدیوی مورد نظر خود، می‌توانید از روش‌های متنوعی استفاده کنید. در این راهنما، دو روش اصلی **دانلود مستقیم با برنامه** و **دانلود با اپلیکیشن ADM دانلودر** را بررسی می‌کنیم.  \n\nروش اول (دانلود مستقیم ) به نصب هیچ چیز اضافه ای نیاز ندارد اما سرعت دانلود کند میباشد\n\nروش دوم (دانلود با ADM ) روشی مطمئن و با سرعت دانلود بالا. برای استفاده از این روش شما باید اپلیکیشن adm را در گوشی خود نصب داشته باشید"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+					<TextView
+						android:id="@+id/textview6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="1.چطور در اپلیکیشن ثبت‌نام کنیم؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="فرآیند ثبت‌نام و ورد یکسان است و اگر از قبل حساب کاربری نداشته باشید سیستم به صورت خودکار شما را در هنگام ورود ثبت‌نام می‌کند. برای ثبت‌نام در اپلیکیشن شما تنها نیاز به یک شماره موبایل در دسترس دارید. برای اینکار بر روی گزینه‌ی تنظیمات در پایین صفحه کلیک کنید و شماره موبایل خود را وارد کنید. پس از آن کدی ۴ رقمی برای شما پیامک می‌شود که با وارد کردن در صفحه‌ی بعدی آن، می‌توانید در اپلیکیشن ثبت‌نام کنیم"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="2.چرا لازم است ثبت‌نام/ ورود کنیم؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview8"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="شما برای تماشای فیلم‌ها و سریال‌ها و ثبت نظر نیاز است در اپلیکیشن ثبت‌نام کنید. با اینکار ما می‌توانیم خدمات بهتری به شما ارائه دهیم"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+					<TextView
+						android:id="@+id/textview9"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="3.چرا باید برای تماشای فیلم و سریال های ایرانی اشتراک ماهیانه پرداخت کنیم؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview10"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="اساس ما بر حمایت از فیلم‌سازان ایرانی است. هزینه‌ی پرداختی شما بر اساس مقدار ساعتی که به تماشای فیلم و سریال می‌پردازین به این عزیزان پرداخت می‌شود تا بتوانند همچنان پر قدرت به تولید فیلم و سریال‌های خوب بپردازند"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+					<TextView
+						android:id="@+id/textview14"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="5.اینترنت من در حال حاضر چطور محاسبه می‌شود؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview15"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="در زمان پخش فیلم و سریال و یا صفحه‌ی اینترنت نیم‌بها می‌توانید از مدل محاسبه‌ی هزینه اینترنت خود مطلع شوید"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+					<TextView
+						android:id="@+id/textview17"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="6.آیا امکان دانلود فیلم و سریال‌ها وجود دارد؟"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview18"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="درحال حاضر به تمام ویویو ها دسترسی دارید و میتوانید آنها را دانلود کنید."
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#9E9E9E" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/info"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview26"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="کاربر گرامی؛ ضمن سپاس از انتخاب سرویس فاکس فیلم لازم است قوانین زیر را رعایت کنید\n\nتمامی محتواهای ارایه شده در برنامه فاکس فیلم در چارچوب قوانین و مقررات کشور می‌باشد. \n\n\nفاکس فیلم با داشتن تنوع محتوایی این اختیار را به کاربر داده است تا خود طبق علایق و سلایق شخصی و اجتماعی خود، فیلم مورد نظر خود را تماشا نماید، ما هیچ تضمینی بر اعتبار آنها و تاثیر مثبت یا منفی آنها بر مخاطب نخواهیم داشت."
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/call"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview25"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="پشتیبانی سریع از طریق پیامرسان\nفاکس فیلمی عزیز، در صورتی که می‌خواهید مشکل شما سریع و بلافاصله بررسی شود، میتوانید از طریق تلگرام با تیم پشتیبانی ما در ارتباط باشید."
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview30"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginBottom="10dp"
+						android:text="تلگرام:"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview31"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@foxfilm_Support"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#448AFF" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>

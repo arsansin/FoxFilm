@@ -1,0 +1,144 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#0F1620"
+		android:orientation="vertical">
+		<com.airbnb.lottie.LottieAnimationView
+			android:id="@+id/lottie1"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:layout_marginTop="30dp"
+			android:padding="5dp"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:scaleType="fitCenter"
+			android:layout_centerInParent="true"
+			app:lottie_fileName="error.json"
+			app:lottie_loop="true"
+			app:lottie_autoPlay="true" />
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="برنامه به مشکل خورده است لطفا برای رفع خطا آن را با ما گزارش کنید"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:paddingLeft="8dp"
+			android:paddingTop="8dp"
+			android:paddingRight="18dp"
+			android:paddingBottom="8dp"
+			android:background="#1D2733"
+			android:gravity="right|center_vertical"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal|center_vertical">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:text="برای رفع خطا دلایل زیر را بررسی کنید"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="4dp"
+				android:paddingBottom="4dp"
+				android:text="اطمینان از قطع فلیترشکن(vpn)"
+				android:textSize="12sp"
+				android:textColor="#9E9E9E" />
+			<TextView
+				android:id="@+id/textview7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:text="لطفا برای رفع خطا آن را به ما گزارش کنید"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginRight="5dp"
+			android:padding="5dp"
+			android:background="#1D2733"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginRight="5dp"
+				android:background="#FF1744"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="گزارش خطا"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="#448AFF"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="شروع مجدد برنامه"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:padding="8dp">
+			<TextView
+				android:id="@+id/textview8"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="TextView"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>

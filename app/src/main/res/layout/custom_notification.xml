@@ -1,0 +1,94 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="#000000"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="8dp"
+				android:paddingBottom="8dp"
+				android:gravity="left|center_vertical"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear89"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:padding="8dp"
+					android:background="#0F1620"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/exit"
+						android:focusable="false"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:src="@drawable/ic_more_horiz_white"
+						android:scaleType="fitCenter" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview3"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:text="یه سر به اپلیکیشن بزن"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview1"
+				android:focusable="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="تماشای فیلم سینمایی ددپول ۲ ساخت سال ۲۰۲۴ با دوپله اختصاصی"
+				android:textSize="11sp"
+				android:textColor="#FFFFFF" />
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="right|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview2"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="۱۴۰۳/۰۶/۰۵"
+					android:textSize="11sp"
+					android:textColor="#9E9E9E" />
+				<TextView
+					android:id="@+id/textview5"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="۱۲:۰۰"
+					android:textSize="11sp"
+					android:textColor="#9E9E9E" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

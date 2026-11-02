@@ -1,0 +1,67 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:padding="15dp"
+		android:background="#1D2733"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:focusable="false"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:src="@drawable/numbers_24px"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/textview1"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:padding="8dp"
+			android:text="آیدی"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:background="#0F1620"
+			android:orientation="vertical">
+			<EditText
+				android:id="@+id/edittext1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:padding="5dp"
+				android:background="@android:color/transparent"
+				android:gravity="right|center_vertical"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF"
+				android:singleLine="true"
+				android:focusable="true" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="10dp"
+			android:padding="8dp"
+			android:background="#FF8F00"
+			android:text="جستجو"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</LinearLayout>

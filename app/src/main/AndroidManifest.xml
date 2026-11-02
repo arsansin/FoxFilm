@@ -1,0 +1,242 @@
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="zakfilm.ir">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+        <uses-permission android:name="ir.mservices.market.BILLING" />
+
+    <queries>
+        <package android:name="ir.mservices.market" />
+        <intent>
+            <action android:name="ir.mservices.market.InAppBillingService.BIND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+        <uses-permission android:name="INTERNET" />
+        <uses-permission android:name="ACCESS_NETWORK_STATE" />
+        <application
+                android:allowBackup="true"
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:name=".SketchApplication"
+                android:requestLegacyExternalStorage="true"
+                android:usesCleartextTraffic="true"
+                android:theme="@style/AppTheme">
+                <activity
+                        android:name=".MainActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:windowSoftInputMode="stateHidden" />
+                <activity
+                        android:name=".NewBuyEshActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:theme="@style/AppTheme.FullScreen" />
+                <activity
+                        android:name=".BuyEshActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".More1Activity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".MoreActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".PurchaseActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".VideoplayerActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:windowSoftInputMode="stateHidden" />
+                <activity
+                        android:name=".ViewActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".NotificationsActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".LoginActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".SavesActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".EditAccountActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".DebugActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".ErrorActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".SendCommentActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".PlayListActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".SplashActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:exported="true">
+                        <intent-filter>
+                                <action android:name="android.intent.action.MAIN" />
+                                <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+                </activity>
+                <activity
+                        android:name=".SettingActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".VideoplayerwebActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:theme="@style/AppTheme.FullScreen"
+                        android:windowSoftInputMode="stateHidden" />
+                <activity
+                        android:name=".InfoActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true"
+                        android:windowSoftInputMode="stateHidden" />
+                <activity
+                        android:name=".CastActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <activity
+                        android:name=".CommentsActivity"
+                        android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+                        android:hardwareAccelerated="true"
+                        android:supportsPictureInPicture="true" />
+                <provider
+                        android:name="androidx.startup.InitializationProvider"
+                        android:authorities="zakfilm.ir.androidx-startup"
+                        android:exported="false">
+                        <meta-data
+                                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                                android:value="androidx.startup" />
+                        <meta-data
+                                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                                android:value="androidx.startup" />
+                </provider>
+                <meta-data
+                        android:name="com.google.android.gms.version"
+                        android:value="@integer/google_play_services_version" />
+                <provider
+                        android:name="com.google.firebase.provider.FirebaseInitProvider"
+                        android:authorities="zakfilm.ir.firebaseinitprovider"
+                        android:exported="false"
+                        android:initOrder="100" />
+                <service
+                        android:name="com.google.firebase.components.ComponentDiscoveryService"
+                        android:exported="false">
+                        <meta-data
+                                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                                android:value="com.google.firebase.components.ComponentRegistrar" />
+                </service>
+                <service
+                        android:name=".FCMService"
+android:directBootAware="true"
+                        android:exported="false">
+                        <intent-filter >
+                                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                        </intent-filter>
+                </service>
+                <receiver
+                        android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+                        android:exported="true"
+                        android:permission="com.google.android.c2dm.permission.SEND">
+                        <intent-filter>
+                                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                        </intent-filter>
+                </receiver>
+                <uses-library
+                        android:name="org.apache.http.legacy"
+                        android:required="false" />
+
+     <receiver
+            android:name="com.adivery.sdk.UninstallReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.adivery.sdk.networks.adivery.AdActivity"
+            android:exported="false"
+            android:screenOrientation="unspecified" />
+
+        <service
+            android:name="com.adivery.sdk.LocationJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+            
+             <!-- Market Receiver -->
+     <receiver
+    android:name="ir.amirsina.mykey.util.IABReceiver"
+    android:enabled="true"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="ir.mservices.market.ping" />
+        <action android:name="ir.mservices.market.purchase" />
+        <action android:name="ir.mservices.market.getPurchase" />
+        <action android:name="ir.mservices.market.billingSupport" />
+        <action android:name="ir.mservices.market.skuDetail" />
+        <action android:name="ir.mservices.market.consume" />
+    </intent-filter>
+</receiver>
+        </application>
+</manifest>
